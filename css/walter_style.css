@@ -1,0 +1,170 @@
+﻿/*body*/
+body {
+    font-family: 'Roboto Slab', serif;
+    background-image: url(../images/background_Breaking_Bad-min.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.w-35 {
+    width: 35% !important;
+}
+
+/*CSS анімація*/
+.center-text_1 {
+    display: none;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    opacity: 0;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out 7s forwards;
+}
+
+.center-text_2 {
+    display: none;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    opacity: 0;
+    margin-top: 100px;
+    animation: fadeIn 1s ease-in-out 5s forwards;
+}
+
+.center-text_3 {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    opacity: 0;
+    margin-top: 160px;
+    animation: fadeIn 1s ease-in-out forwards 1.5s, fadeOut 1s ease-in-out forwards 3s;
+}
+
+.center-text_4 {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    opacity: 0;
+    margin-top: 80px;
+    animation: fadeIn 1s ease-in-out forwards 0.75s, fadeOut 1s ease-in-out forwards 2.75s;
+}
+
+.center-text_5 {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    opacity: 0;
+    margin-top: 0px;
+    animation: fadeIn 1s ease-in-out forwards 0s, fadeOut 1s ease-in-out forwards 2.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+/*-----------*/
+
+
+/*To up page button*/
+.custom-icon {
+    color: #fefbef;
+    font-size: 32px;
+    transition: transform 0.2s, color 0.2s;
+    display: inline-block;
+    padding: 10px;
+}
+
+    .custom-icon:hover {
+        transform: scale(1.2);
+        color: #198754;
+    }
+
+    .custom-icon:active {
+        transform: scale(1);
+    }
+
+/*----------*/
+
+
+/*logo style*/
+.logo {
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    transition: transform 0.2s, color 0.2s;
+}
+
+    .logo:hover {
+        transform: scale(1.1);
+    }
+
+    .logo:active {
+        transform: scale(1);
+    }
+
+/*------------*/
+
+/*header*/
+.page-header {
+    height: 650px;
+}
+
+/*main*/
+.audio-file {
+    display: flex;
+    justify-content: right;
+}
+
+.bg-opacity-85 {
+    --bs-bg-opacity: 0.85;
+}
+
+.ms-6 {
+    margin-left: 3.75rem !important;
+}
+
+.carousel-item img {
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.animated-element {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+    .animated-element.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
